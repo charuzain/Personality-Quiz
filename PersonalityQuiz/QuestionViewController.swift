@@ -40,6 +40,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var rangedStackView: UIStackView!
     @IBOutlet weak var rangedLabel1: UILabel!
     @IBOutlet weak var rangedLabel2: UILabel!
+    
+    @IBOutlet weak var rangedSlider: UISlider!
     // ==============================
     // ==============================
     
@@ -141,6 +143,16 @@ class QuestionViewController: UIViewController {
         }
         nextQuestion()
         
+    }
+    
+    
+    @IBAction func rangedAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        
+        answerChosen.append(currentAnswers[index])
+        
+        nextQuestion()
     }
     
     
