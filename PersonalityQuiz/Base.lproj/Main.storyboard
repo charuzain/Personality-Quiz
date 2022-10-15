@@ -205,18 +205,33 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KS-ce-4HZ">
+                                <rect key="frame" x="20" y="76" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vkT-hx-4wH">
+                                <rect key="frame" x="20" y="784" width="374" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="C2G-o0-qaF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="z82-U2-CX9" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="0UY-t2-3Ht"/>
                             <constraint firstItem="pTp-NJ-03D" firstAttribute="centerY" secondItem="vKx-pe-W8R" secondAttribute="centerY" id="6jJ-cy-b0F"/>
+                            <constraint firstItem="vkT-hx-4wH" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="7LZ-v7-RBg"/>
                             <constraint firstItem="Iar-Z5-j6e" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="9hM-L0-eLW"/>
+                            <constraint firstItem="C2G-o0-qaF" firstAttribute="trailing" secondItem="vkT-hx-4wH" secondAttribute="trailing" constant="20" id="BeP-yD-cXb"/>
                             <constraint firstItem="C2G-o0-qaF" firstAttribute="trailing" secondItem="pTp-NJ-03D" secondAttribute="trailing" constant="20" id="GQU-CO-sQX"/>
+                            <constraint firstItem="2KS-ce-4HZ" firstAttribute="top" secondItem="C2G-o0-qaF" secondAttribute="top" constant="20" id="JPp-gE-3fN"/>
                             <constraint firstItem="C2G-o0-qaF" firstAttribute="trailing" secondItem="z82-U2-CX9" secondAttribute="trailing" constant="20" id="Ju1-XE-hLn"/>
                             <constraint firstItem="Iar-Z5-j6e" firstAttribute="centerY" secondItem="vKx-pe-W8R" secondAttribute="centerY" id="Nyr-tr-R6B"/>
                             <constraint firstItem="C2G-o0-qaF" firstAttribute="trailing" secondItem="Iar-Z5-j6e" secondAttribute="trailing" constant="20" id="bMq-w6-Smu"/>
+                            <constraint firstItem="C2G-o0-qaF" firstAttribute="trailing" secondItem="2KS-ce-4HZ" secondAttribute="trailing" constant="20" id="fcY-Vn-G8G"/>
+                            <constraint firstItem="C2G-o0-qaF" firstAttribute="bottom" secondItem="vkT-hx-4wH" secondAttribute="bottom" constant="20" id="mTu-Ln-NBX"/>
                             <constraint firstItem="pTp-NJ-03D" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="npL-zp-hba"/>
+                            <constraint firstItem="2KS-ce-4HZ" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="rhB-Vr-jjp"/>
                             <constraint firstItem="z82-U2-CX9" firstAttribute="centerY" secondItem="vKx-pe-W8R" secondAttribute="centerY" id="rxZ-8A-gmx"/>
                         </constraints>
                     </view>
