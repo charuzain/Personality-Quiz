@@ -28,6 +28,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx3-sx-L82">
                                         <rect key="frame" x="0.0" y="65.5" width="398" height="30"/>
                                         <state key="normal" title="Begin Personality Quiz"/>
+                                        <connections>
+                                            <segue destination="uqt-Mo-5tc" kind="show" id="Qul-z1-g1l"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -74,9 +77,6 @@
                             <constraint firstItem="TWe-e1-iuL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zIv-D2-tyd"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="uqt-Mo-5tc" kind="show" id="FvA-1r-Zb2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,8 +237,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="vBp-oR-hbw"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="sY5-iU-w1M" id="dqj-GH-i8F"/>
+                        <outlet property="multiLabel2" destination="XCg-1D-7qY" id="Lcf-aA-XEY"/>
+                        <outlet property="multiLabel3" destination="LBK-N6-KLU" id="qb0-y6-JgW"/>
+                        <outlet property="multiLabel4" destination="J9E-ua-lvy" id="qZR-Cv-msI"/>
                         <outlet property="multipleStackView" destination="pTp-NJ-03D" id="zbb-j5-8Ir"/>
+                        <outlet property="questionLabel" destination="2KS-ce-4HZ" id="5TG-eS-Zc5"/>
+                        <outlet property="questionProgressView" destination="vkT-hx-4wH" id="l9e-Be-KVX"/>
+                        <outlet property="rangedLabel1" destination="1sc-0f-Lwn" id="hDW-CL-NuT"/>
+                        <outlet property="rangedLabel2" destination="YCJ-BQ-rmJ" id="xGr-Ih-UtY"/>
                         <outlet property="rangedStackView" destination="z82-U2-CX9" id="YO8-Uc-P2V"/>
+                        <outlet property="singleButton1" destination="kYG-Z9-12X" id="gGp-Pp-fC4"/>
+                        <outlet property="singleButton2" destination="iMP-Mb-6uf" id="Wpf-dM-tJK"/>
+                        <outlet property="singleButton3" destination="RYJ-DJ-1fu" id="Wri-Ha-fbN"/>
+                        <outlet property="singleButton4" destination="gYq-Df-FC3" id="oXT-vq-El1"/>
                         <outlet property="singleStackView" destination="Iar-Z5-j6e" id="ZI5-67-Ef0"/>
                         <segue destination="Iqd-gV-yhS" kind="show" identifier="&quot;Results&quot;" id="seU-43-SCH"/>
                     </connections>
