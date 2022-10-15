@@ -96,18 +96,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYG-Z9-12X">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="RIO-nQ-CAx" eventType="touchUpInside" id="mfV-AY-fKE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMP-Mb-6uf">
                                         <rect key="frame" x="0.0" y="50" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="RIO-nQ-CAx" eventType="touchUpInside" id="sVS-1s-zrL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYJ-DJ-1fu">
                                         <rect key="frame" x="0.0" y="100" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="RIO-nQ-CAx" eventType="touchUpInside" id="JGm-Eh-opS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYq-Df-FC3">
                                         <rect key="frame" x="0.0" y="150" width="374" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="RIO-nQ-CAx" eventType="touchUpInside" id="Av2-ca-fgg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -173,6 +185,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTP-Mo-xyY">
                                         <rect key="frame" x="0.0" y="204" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="RIO-nQ-CAx" eventType="touchUpInside" id="P09-Z4-Rlx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -241,6 +256,10 @@
                         <outlet property="multiLabel2" destination="XCg-1D-7qY" id="Lcf-aA-XEY"/>
                         <outlet property="multiLabel3" destination="LBK-N6-KLU" id="qb0-y6-JgW"/>
                         <outlet property="multiLabel4" destination="J9E-ua-lvy" id="qZR-Cv-msI"/>
+                        <outlet property="multiSwitch1" destination="dtY-QZ-soD" id="sEo-zT-6zF"/>
+                        <outlet property="multiSwitch2" destination="6F5-HZ-Kra" id="ep0-vw-Fb1"/>
+                        <outlet property="multiSwitch3" destination="cwE-9Z-Amp" id="yMo-8c-ZM3"/>
+                        <outlet property="multiSwitch4" destination="jKK-mY-bva" id="CIH-8w-GNn"/>
                         <outlet property="multipleStackView" destination="pTp-NJ-03D" id="zbb-j5-8Ir"/>
                         <outlet property="questionLabel" destination="2KS-ce-4HZ" id="5TG-eS-Zc5"/>
                         <outlet property="questionProgressView" destination="vkT-hx-4wH" id="l9e-Be-KVX"/>
