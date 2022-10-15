@@ -219,12 +219,6 @@
                             <constraint firstItem="pTp-NJ-03D" firstAttribute="leading" secondItem="C2G-o0-qaF" secondAttribute="leading" constant="20" id="npL-zp-hba"/>
                             <constraint firstItem="z82-U2-CX9" firstAttribute="centerY" secondItem="vKx-pe-W8R" secondAttribute="centerY" id="rxZ-8A-gmx"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Iar-Z5-j6e"/>
-                                <exclude reference="pTp-NJ-03D"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="vBp-oR-hbw"/>
                     <connections>
