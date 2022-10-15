@@ -24,6 +24,16 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var multiLabel2: UILabel!
     @IBOutlet weak var multiLabel3: UILabel!
     @IBOutlet weak var multiLabel4: UILabel!
+    
+    @IBOutlet weak var multiSwitch1: UISwitch!
+    
+    @IBOutlet weak var multiSwitch2: UISwitch!
+    
+    @IBOutlet weak var multiSwitch3: UISwitch!
+    
+    @IBOutlet weak var multiSwitch4: UISwitch!
+    
+    
     // ==============================
     // Ranged stack view outlet====/
     // ==============================
@@ -79,6 +89,7 @@ class QuestionViewController: UIViewController {
     
     
     var questionIndex = 0
+    var answerChosen: [Answer] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,6 +97,41 @@ class QuestionViewController: UIViewController {
         //updateUI() is called beofre displaying each question to the player
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+      // check which button was tapped
+    // append the choosen answer to answerChoosenArray
+        
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case singleButton1:
+            answerChosen.append(currentAnswers[0])
+        case singleButton2:
+            answerChosen.append(currentAnswers[1])
+        case singleButton3:
+            answerChosen.append(currentAnswers[2])
+        case singleButton4:
+            answerChosen.append(currentAnswers[3])
+        default:
+            break
+       
+        }
+        nextQuestion()
+        
+        
+        
+    }
+    
+    
+    @IBAction func multipleAnswerButtonPressed() {
+    }
+    
+    
+    func nextQuestion(){
+        
+    }
+    
     
     func updateSingleStack(using answers: [Answer]){
         singleStackView.isHidden = false
