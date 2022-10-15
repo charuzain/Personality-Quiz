@@ -15,6 +15,7 @@
 		74B4981928F9B05300340905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B4981728F9B05300340905 /* LaunchScreen.storyboard */; };
 		74B4982128FA73D100340905 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4982028FA73D100340905 /* QuestionViewController.swift */; };
 		74B4982328FA73FD00340905 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4982228FA73FD00340905 /* ResultViewController.swift */; };
+		74B4982528FB242D00340905 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B4982428FB242D00340905 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		74B4981A28F9B05300340905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B4982028FA73D100340905 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		74B4982228FA73FD00340905 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		74B4982428FB242D00340905 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				74B4980E28F9B05100340905 /* SceneDelegate.swift */,
 				74B4981028F9B05100340905 /* IntroductionViewController.swift */,
 				74B4981228F9B05100340905 /* Main.storyboard */,
+				74B4982428FB242D00340905 /* Question.swift */,
 				74B4982028FA73D100340905 /* QuestionViewController.swift */,
 				74B4982228FA73FD00340905 /* ResultViewController.swift */,
 				74B4981528F9B05300340905 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				74B4982328FA73FD00340905 /* ResultViewController.swift in Sources */,
 				74B4981128F9B05100340905 /* IntroductionViewController.swift in Sources */,
 				74B4980D28F9B05100340905 /* AppDelegate.swift in Sources */,
+				74B4982528FB242D00340905 /* Question.swift in Sources */,
 				74B4982128FA73D100340905 /* QuestionViewController.swift in Sources */,
 				74B4980F28F9B05100340905 /* SceneDelegate.swift in Sources */,
 			);
