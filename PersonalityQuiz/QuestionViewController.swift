@@ -169,6 +169,11 @@ class QuestionViewController: UIViewController {
     }
     
     
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultViewController? {
+        return  ResultViewController(coder: coder, responses: answerChosen)
+            
+    }
+    
     func updateSingleStack(using answers: [Answer]){
         singleStackView.isHidden = false
         singleButton1.setTitle(answers[0].text, for: .normal)
