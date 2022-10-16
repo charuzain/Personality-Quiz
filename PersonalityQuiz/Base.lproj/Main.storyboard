@@ -275,17 +275,17 @@
                         <outlet property="singleButton3" destination="RYJ-DJ-1fu" id="Wri-Ha-fbN"/>
                         <outlet property="singleButton4" destination="gYq-Df-FC3" id="oXT-vq-El1"/>
                         <outlet property="singleStackView" destination="Iar-Z5-j6e" id="ZI5-67-Ef0"/>
-                        <segue destination="Iqd-gV-yhS" kind="show" identifier="&quot;Results&quot;" id="seU-43-SCH"/>
+                        <segue destination="Iqd-gV-yhS" kind="show" identifier="Results" id="ea9-2R-lEy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H0-r5-fp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.0434782608697" y="101.78571428571428"/>
         </scene>
-        <!--Results-->
+        <!--ResultViewController-->
         <scene sceneID="sah-P5-eNS">
             <objects>
-                <viewController id="Iqd-gV-yhS" customClass="ResultViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Iqd-gV-yhS" userLabel="ResultViewController" customClass="ResultViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9JN-Ph-Hfv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,9 @@
                             <constraint firstItem="ggT-hS-uf0" firstAttribute="trailing" secondItem="ggt-Fg-2gg" secondAttribute="trailing" constant="20" id="zx5-7Y-S3L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Results" id="0aF-SF-XgA"/>
+                    <navigationItem key="navigationItem" title="Results" id="0aF-SF-XgA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LUa-2a-s3o"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTJ-Qd-68Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
