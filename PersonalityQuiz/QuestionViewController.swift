@@ -170,7 +170,7 @@ class QuestionViewController: UIViewController {
     
     
     @IBSegueAction func showResults(_ coder: NSCoder) -> ResultViewController? {
-        return  ResultViewController(coder: coder, responses: answerChosen)
+        return  ResultViewController(coder: coder , responses:answerChosen)
             
     }
     
