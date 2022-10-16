@@ -28,6 +28,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calculatePersonalityResult()
+        navigationItem.hidesBackButton = true
 
         // Do any additional setup after loading the view.
     }
@@ -37,10 +38,10 @@ class ResultViewController: UIViewController {
             counts[answer.type , default: 0] += 1
         }
         
-        let frequentAnswersSorted = frequencyOfAnswers.sorted(by:
-        {(pair1, pair2) in
-        return pair1.value > pair2.value
-        })
+//        let frequentAnswersSorted = frequencyOfAnswers.sorted(by:
+//        {(pair1, pair2) in
+//        return pair1.value > pair2.value
+//        })
         
 //        let mostCommonAnswer = frequentAnswersSorted.first!.key
         

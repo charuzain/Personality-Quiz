@@ -317,7 +317,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="0aF-SF-XgA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LUa-2a-s3o"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LUa-2a-s3o">
+                            <connections>
+                                <segue destination="Mm9-AV-w34" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="EOX-qe-kWB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultAnswerLabel" destination="bP6-SM-PWk" id="HgD-pn-1px"/>
@@ -325,6 +329,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTJ-Qd-68Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Mm9-AV-w34" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="128.57142857142856"/>
         </scene>
